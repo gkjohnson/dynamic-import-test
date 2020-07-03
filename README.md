@@ -13,4 +13,4 @@
 
 ## Webpack
 
-- _Almost_ just works. Outputs files to a directory by default but the path used to load the chunks are relative to the window subdomain by default meaning sub dependencies of loaded bundles do not load correctly when they are not next the root html file. `output.publicPath` must be specified to address this but even then it's hardcoded to a specific location.
+- _Almost_ just works. Outputs files to a directory by default but the path used to load the chunks are relative to the current page location by default meaning sub dependencies of loaded bundles do not load correctly when they are not next the root html file. `output.publicPath` must be specified to address this but even then it's hardcoded to a specific location.
