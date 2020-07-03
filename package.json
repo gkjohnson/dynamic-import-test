@@ -1,0 +1,26 @@
+{
+  "name": "dynamic-import-test",
+  "scripts": {
+    "start": "static-server",
+    "build-rollup": "rollup ./src/index.js --output.dir ./rollup/bundle/ --format umd --inlineDynamicImports",
+    "build-parcel": "parcel build ./src/index.js --out-dir ./parcel/bundle/ --no-minify",
+    "build-webpack": "webpack --config ./webpack/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkjohnson/dynamic-import-test.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/gkjohnson/dynamic-import-test/issues"
+  },
+  "homepage": "https://github.com/gkjohnson/dynamic-import-test#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "rollup": "^2.18.2",
+    "static-server": "^2.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
